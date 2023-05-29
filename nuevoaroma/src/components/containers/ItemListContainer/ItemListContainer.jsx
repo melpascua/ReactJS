@@ -1,15 +1,14 @@
 import './ItemListContainer.css';
-import ItemList from '../ItemList/Itemlist';
-import { obtenerProductos } from '../async';
+import { obtenerProducto } from '../async';
 import { useEffect, useState } from 'react';
 import Item from '../Item/Item';
 
 
 const ItemListContainer = () => {
-    const {productos, setProductos} = useState([]);
+    const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        obtenerProductos()
+        obtenerProducto()
         .then(response => {
             setProductos(response)
         })

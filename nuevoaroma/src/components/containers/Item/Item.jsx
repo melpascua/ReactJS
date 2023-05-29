@@ -1,17 +1,22 @@
 import Button from '../../common/Button/Button';
 
-
-const Item = ({ id, nombre, precio, imagen }) => {
+const Item = ({ productos }) => {
     return (
-        <div className="contenedor-tienda">
-            <img src={imagen} alt={nombre} />
-            <h2>{nombre}</h2>
-            <small>{precio}</small>
-            <Button
-                text="Información"
-            ></Button>
-        </div>
-    );
-};
+        <>
+            {
+                productos.map((prod) =>
+                    <div>
+                        <img src={prod.imagen} alt={prod.nombre} />
+                        <h2>{prod.nombre}</h2>
+                        <small>{prod.precio}</small>
+                        <Button
+                            text="Información"
+                        ></Button>
+                    </div>)
+            }
+        </>
+    )
+}
 
 export default Item;
+
