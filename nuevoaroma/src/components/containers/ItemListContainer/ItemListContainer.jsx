@@ -1,5 +1,5 @@
 import './ItemListContainer.css';
-import { obtenerProducto } from '../async';
+import { obtenerProductos } from '../async';
 import { useEffect, useState } from 'react';
 import Item from '../Item/Item';
 
@@ -8,7 +8,7 @@ const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        obtenerProducto()
+        obtenerProductos()
         .then(response => {
             setProductos(response)
         })

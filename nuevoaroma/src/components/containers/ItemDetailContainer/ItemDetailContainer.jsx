@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import { obtenerProducto } from "../async";
+import { obtenerProductosId } from "../async";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
-    const [producto, setProducto] = useState(null)
+    const [productos, setProductos] = useState(null)
     
         useEffect(() => {
-            obtenerProducto('SASD4')
+            obtenerProductosId('SASD4')
             .then(response => {
-                setProducto(response)
+                setProductos(response)
             })
             .catch(error => {
                 console.error(error)
@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
 
     return(
         <div className="ItemDetailContainer">
-            <ItemDetail {...producto}></ItemDetail>
+            <ItemDetail {...productos}></ItemDetail>
         </div>
     );
 };

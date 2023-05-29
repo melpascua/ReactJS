@@ -59,7 +59,7 @@ const productos = [
     }
 ];
 
-export const obtenerProducto = () => {
+export const obtenerProductos = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(productos)
@@ -67,3 +67,10 @@ export const obtenerProducto = () => {
     });
 };
 
+export const obtenerProductosId = (productoId) => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(productos.find(prod => prod.id === productoId))
+        }, 500)
+    })
+}
