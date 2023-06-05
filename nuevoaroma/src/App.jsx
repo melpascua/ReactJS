@@ -14,9 +14,6 @@ function App() {
         <ItemListContainer>
         </ItemListContainer>
       </div>
-      <div>
-        <ItemDetailContainer></ItemDetailContainer>
-      </div>
       <Footer></Footer>
     </>
   );

@@ -19,9 +19,6 @@ const ItemListContainer = () => {
 
     return (
         <main>
-            <div>
-                <h1>Tienda Nuevo Aroma</h1>
-            </div>
             <div className='contenedor-tienda'>
                     <Item productos={productos}/>
             </div>
