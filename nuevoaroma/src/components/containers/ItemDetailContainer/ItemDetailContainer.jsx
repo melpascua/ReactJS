@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 import { obtenerProductosId } from "../async";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import './ItemDetailContainer.css';
+import { useParams } from 'react-router-dom';
 
 
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState(null);
+    
+    const {itemId} = useParams()
 
     useEffect(() => {
         obtenerProductosId('SASD4')
@@ -15,7 +19,7 @@ const ItemDetailContainer = () => {
             .catch(error => {
                 console.error(error);
             });
-    }, []);
+    }, [itemId]);
 
     return (
         <div className="ItemDetailContainer">
@@ -23,28 +27,6 @@ const ItemDetailContainer = () => {
         </div>
     );
 };
-
-
-/** const ItemDetailContainer = () => {
-    const [productos, setProductos] = useState(null)
-    
-        useEffect(() => {
-            obtenerProductosId('SASD4')
-            .then(response => {
-                setProductos(response)
-            })
-            .catch(error => {
-                console.error(error)
-            });
-        }, []);
-    
-
-    return(
-        <div className="ItemDetailContainer">
-            <ItemDetail {...productos}></ItemDetail>
-        </div>
-    );
-};*/
 
 
 export default ItemDetailContainer;

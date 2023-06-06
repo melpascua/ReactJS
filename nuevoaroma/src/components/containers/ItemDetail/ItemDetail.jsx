@@ -1,31 +1,18 @@
 import ItemCount from "../ItemCount/ItemCount";
+import './ItemDetail.css';
 
-const ItemDetail = ({ producto }) => {
-    return (
-        <div>
-            <h2>Producto seleccionado</h2>
-            <img src={producto.imagen} alt={producto.nombre} />
-            <h3>{producto.nombre}</h3>
-            <small>{producto.precio}</small>
-            <div>
-                <ItemCount inicial={1} stock={25} onAdd={(cantidad) => console.log('agregado', cantidad)}></ItemCount>
-            </div>
-        </div>
-    );
-};
-
-
-/*const ItemDetail = ({prod}) => {
+const ItemDetail = ({ prod }) => {
     return (
         <div>
             <h2>Producto seleccionado</h2>
             <img src={prod.imagen} alt={prod.nombre} />
-            <h3>{prod.nombre}</h3>
-            <small>{prod.precio}</small>
+            <h3>{prod.nombre} {prod.precio}$</h3>
+            <h3>{prod.stock}</h3>
             <div>
-                <ItemCount inicial={1} stock={25} onAdd={(cantidad) => console.log('agregado', cantidad)}></ItemCount>
+                <ItemCount inicial={1} stock={prod.stock} onAdd={(cantidad) => console.log('agregado', cantidad)}></ItemCount>
             </div>
-        </div>);
-};*/
+        </div>
+    );
+};
 
 export default ItemDetail;
