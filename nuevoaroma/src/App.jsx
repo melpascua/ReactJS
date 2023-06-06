@@ -8,30 +8,24 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-      <div className="App">
-        <BrowserRouter>
+
+      <BrowserRouter>
+        <NavBar />
         <Routes>
-          <Route path='/' element={ItemListContainer}/>
-          <Route path='/categoria/:categoriaId' element={ItemListContainer}/>
-          <Route path='/item/:itemId' element={ItemDetailContainer}/>
-          <Route path='*' element={<h2>404 NOT FOUND</h2>}/>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/categoria/:categoriaId' element={<ItemListContainer />} />
+          <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+          <Route path='*' element={<h2>404 NOT FOUND</h2>} />
 
         </Routes>
-        </BrowserRouter>
-        <NavBar></NavBar>
-      </div>
-      <div>
-        <ItemListContainer>
-        </ItemListContainer>
-      </div>
-      <div>
-        <ItemDetailContainer></ItemDetailContainer>
-      </div>
-      <Footer></Footer>
+        <Footer />
+      </BrowserRouter>
+
+
+
+
     </>
   );
 }
 
-export default App;   
-
-
+export default App;

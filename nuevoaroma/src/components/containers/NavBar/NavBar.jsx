@@ -11,9 +11,9 @@ const NavBar = () => {
                     <img className='logo' src={Logo} alt="" />
                 </Link>
                 <div>
-                    <li><NavLink to={'/categoria/cafeteras'}></NavLink></li>
-                    <li><NavLink to={'/categoria/tiposDeCafe'}></NavLink></li>
-                    <li><NavLink to={'/categoria/extra'}></NavLink></li>
+                    <li><NavLink to={'/categoria/cafeteras'}>Cafeteras</NavLink></li>
+                    <li><NavLink to={'/categoria/tipoDeCafe'}>Tipos De Café</NavLink></li>
+                    <li><NavLink to={'/categoria/extra'}>Extra</NavLink></li>
                 </div>
                 <CartWidget></CartWidget>
             </ul>

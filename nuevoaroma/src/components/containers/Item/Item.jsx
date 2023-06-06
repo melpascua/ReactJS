@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../../common/Button/Button';
 import './item.css'
 
@@ -9,7 +10,7 @@ const Item = ({ productos }) => {
                     <div className='producto'>
                         <img src={prod.imagen} alt={prod.nombre} />
                         <h2>{prod.nombre} {prod.precio}$</h2>
-                        <link to={'/item/${Id}'}>Información</link>
+                        <Link to={`/item/${prod.id}`}>Información</Link>
                     </div>
                 )
             }
@@ -18,4 +19,3 @@ const Item = ({ productos }) => {
 }
 
 export default Item;
-
