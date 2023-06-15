@@ -5,7 +5,7 @@ const productos = [
         "precio": 70,
         "imagen": "../../../public/images/maquina-de-cafe-de-filtro (2).png",
         "categoria": "cafeteras",
-        "stock": "10"
+        "stock": 10
     },
 
     {
@@ -14,7 +14,7 @@ const productos = [
         "precio": 100,
         "imagen": "../../../public/images/maquina-de-cafe-express.png",
         "categoria": "cafeteras",
-        "stock": "50"
+        "stock": 50
     },
 
     {
@@ -23,7 +23,7 @@ const productos = [
         "precio": 85,
         "imagen": "../../../public/images/maquinade-de-cafe-molinillo.png",
         "categoria": "cafeteras",
-        "stock": "5"
+        "stock": 5
     },
 
     {
@@ -32,7 +32,7 @@ const productos = [
         "precio": 25,
         "imagen": "../../../public/images/cafe-molido.png",
         "categoria": "tipoDeCafe",
-        "stock": "15"
+        "stock": 15
     },
 
     {
@@ -41,7 +41,7 @@ const productos = [
         "precio": 30,
         "imagen": "../../../public/images/Sin título-1.png",
         "categoria": "tipoDeCafe",
-        "stock": "3"
+        "stock": 3
     },
     {
         "id": "ODYV5",
@@ -49,7 +49,7 @@ const productos = [
         "precio": 40,
         "imagen": "../../../public/images/capsulas-nespresso.png",
         "categoria": "tipoDeCafe",
-        "stock": "40"
+        "stock": 40
     },
     {
         "id": "OTFC7",
@@ -57,7 +57,7 @@ const productos = [
         "precio": 20,
         "imagen": "../../../public/images/vasos-reutilizables.png",
         "categoria": "extra",
-        "stock": "150"
+        "stock": 150
     },
     {
         "id": "YUCH0",
@@ -65,15 +65,15 @@ const productos = [
         "precio": 30,
         "imagen": "../../../public/images/taza-reutilizable.png",
         "categoria": "extra",
-        "stock": "10"
+        "stock": 10
     },
     {
         "id": "JFUC4",
-        "nombre": "Almacen",
+        "nombre": "Almacén",
         "precio": 15,
         "imagen": "../../../public/images/dulce-de-leche.png",
         "categoria": "extra",
-        "stock": "42"
+        "stock": 42
     }
 ];
 

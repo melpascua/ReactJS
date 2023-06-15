@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Button from '../../common/Button/Button';
 import './item.css'
 
 const Item = ({ productos }) => {
