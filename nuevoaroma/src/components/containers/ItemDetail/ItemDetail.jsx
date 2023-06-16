@@ -9,7 +9,7 @@ const ItemDetail = ({ prod }) => {
 
     const [cantidadAgregada, setCantidadAgregada] = useState(0)
 
-    agregarProducto () = useContext(CartContext)
+    const {agregarProducto} = useContext(CartContext)
 
     const contador = (cantidad) => {
         setCantidadAgregada(cantidad)
